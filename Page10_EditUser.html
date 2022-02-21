@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit User Profile</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   
+   <!--Custom CSS -->
+    <link rel="stylesheet" href="EditUserBackstore.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html"><h3>ConUmart</h3></a>
+        </div>
+
+        <ul class="list-unstyled components">
+
+             <li>
+                <a href="page9.html">&#128100; Users</a>
+            </li>
+            <li>
+                <a href="page7.html">&#128270; Products</a>
+            </li>            
+            <li>
+                <a href="order_list_p.11.html">&#128221; Orders</a>
+            </li>
+            <li>
+                <a href="#">&#128161; Feedback</a>
+            </li>
+             <li>
+                <a href="#">&#128202; Sales</a>
+            </li>
+             <li>
+                <a href="#">&#128178; Promotions</a>
+            </li>
+             <li>
+                <a href="#">&#128179; Coupons</a>
+            </li>
+             <li>
+                <a href="#">&#128195; Invoices</a>
+            </li>
+             <li>
+                <a href="#">&#128109; Employees</a>
+            </li>
+             <li>
+                <a href="#">&#128295; Manager</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card"  style="background-color: #999999; color: #fff; text-align: center; font-size: 30px;>
+                        <div class="card-header">
+                            Back-Store Management
+                        </div>
+                        <div class="Profile-Settings">
+						
+							<h4 class="Profile-title"> Profile Settings </h4>
+
+           <!  THIS PART IS THE BOX WITH THE USER INFORMATION TO BE EDITED>     
+		   <! the values will determine how much the div spans ( a div is split into 12 columns>
+		   <! col-lg-8  meaning column-large 8. if screen is large, it will take spce of 8 elements>
+		   <! col-sm-3 meaning column-small  3>
+		   <!  col-sm-9 meaning column small  9>
+		   <! row-mb-3 meaning margin bottom 3>
+		   <!mb-0 meaning margin bottom 0>
+				<div class="col-lg-8">
+				
+					<div class="card2">
+						<div class="card-body">
+						
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">First Name</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Mary">
+								</div>
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Last Name</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Platt">
+								</div>
+							</div>
+							
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Email Address</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="mary.platt@gmail.com">
+								</div>
+							</div>
+							
+							
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Phone Number</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="(514) 343-0343">
+								</div>
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Address</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="438 chemin des Erables">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">City</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Laval">
+								</div>
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Province</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="QC">
+								</div>
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Country</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="Canada">
+								</div>
+							</div>
+							
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Postal Code</h6>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" value="H7O 7KL">
+								</div>
+							</div>
+							
+							
+							<div class="row mb-3">
+								<div class="col-sm-3"></div>
+								
+								<div class="col-sm-9">
+								<a href="page9.html"> <input type="button" value="Save Changes"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+				
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

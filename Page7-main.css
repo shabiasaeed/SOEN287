@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================================================
+1. Styling the table (general)
+============================================================== */
+
+.table-of-products {
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 0.5em;
+}
+
+.th-infos {
+  background-color: black;
+  color: white;
+  border-right: 1px solid white;
+  min-width: 80px;
+}
+
+.td-products {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+/*=============================================================
+2. Styling and organising the other images button
+===============================================================  */
+
+.product-images-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alternate-product-image-button {
+  border-collapse: separate;
+  height: 2em;
+  width: 4em;
+  background-color: black;
+  color: white;
+  border-color: white;
+  align-self: center;
+}
+
+/*=============================================================
+3. Styling the edit and delete buttons
+===============================================================  */
+.edit-delete-buttons {
+  border-collapse: separate;
+  height: 3em;
+  width: 3em;
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn-outline-secondary {
+  margin-bottom: 10px;
+}
+
+/*=============================================================
+4. Creating the mobile version
+===============================================================  */
+
+@media screen and (max-width: 1860px) {
+  /* -------------------Restyling other pages anchors----------------------- */
+  .justify-content-between {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  /* -------------------Changing tables behavior---------------------- */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  /* -------------------Resizing table and organizing the size of page/table and so on----------------------- */
+  #content {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .search-font-size {
+    font-size: 0.85em;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .col-12 {
+    padding: 10px;
+  }
+  .card-body {
+    padding: 0;
+  }
+
+  .nav-tabs {
+    flex-wrap: nowrap;
+    font-size: 0.85em;
+  }
+
+  .table-of-products,
+  .td-products {
+    border: none;
+    font-size: 1em;
+  }
+
+  /* --------------------------------Reorganizing the buttons------------------------------------------------------ */
+
+  .product-images-container {
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .button-container {
+    justify-content: start;
+  }
+
+  .edit-delete-buttons {
+    height: 2em;
+    width: 2em;
+  }
+
+  /* --------------------------------------Restyling the full table----------------------------------------------------------- */
+  /* Hide table header */
+  thead {
+    display: none;
+  }
+
+  /* Adjusting the size of stuff again */
+  tr {
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  td {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    column-gap: 10px;
+  }
+
+  /* .td-container {
+    margin-bottom: 40px;
+  } */
+
+  td:nth-of-type(1):before {
+    content: "Product Name";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Product Brand";
+  }
+  td:nth-of-type(3):before {
+    content: "Product ID";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Product Description";
+  }
+
+  td:nth-of-type(5):before {
+    content: "Product Images";
+  }
+
+  td:nth-of-type(6):before {
+    content: "Quantity in Stock";
+  }
+
+  td:nth-of-type(7):before {
+    content: "Weight/Size";
+  }
+  td:nth-of-type(8):before {
+    content: "Price";
+  }
+  td:nth-of-type(9):before {
+    content: "Item on Sale?";
+  }
+
+  td:nth-of-type(10):before {
+    content: "Sale's Last Day";
+  }
+
+  td:nth-of-type(11):before {
+    content: "Sale Price's Minimum Quantiy";
+  }
+  td:nth-of-type(12):before {
+    content: "Sale Price for Minimum Quantity";
+  }
+  td:nth-of-type(13):before {
+    content: "Price per Weight/Size";
+  }
+  td:nth-of-type(14):before {
+    content: "Modifications";
+  }
+}

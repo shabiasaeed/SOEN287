@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./page4.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <!-- TOP-BAR -->
+        <div class="shop-title-container">
+          <div class="top-bar-container">
+            <!-- ConUMart button/anchor -->
+            <div class="home-anchor">
+              <a href="index.html"
+                ><button class="shop-title">ConUmart</button></a
+              >
+            </div>
+  
+            <!-- Misc bar at the right -->
+            <div class="top-bar-misc-container">
+              <a href="page4.html" class="top-bar-misc-anchors"
+                ><i class="fa-solid fa-clipboard-list"></i>
+                <p class="top-bar-misc-anchors-content">Shopping List</p></a
+              >
+              <a href="login_p5.html" class="top-bar-misc-anchors"
+                ><i class="fa-solid fa-user"></i>
+                <p class="top-bar-misc-anchors-content">My account</p></a
+              >
+              <a href="#" class="top-bar-misc-anchors"><p>FR</p></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- NAV BAR -->
+        <div class="nav-container">
+          <nav class="nav">
+            <input type="checkbox" class="nav-checkbox" id="nav-checkbox" />
+            <label class="nav-toggle" for="nav-checkbox">
+              <i class="fa-solid fa-bars menu-icon"></i>
+              <i class="fa-solid fa-xmark close-icon" id="close-icon"></i>
+            </label>
+            <ul class="nav-content">
+              <li class="logo">
+                <a href="index.html" class="header-anchors"
+                  >My Online groceries</a
+                >
+              </li>
+              <li class="nav-links-containers">
+                <a href="index.html" class="header-anchors"
+                  ><button class="nav-links">Aisles</button></a
+                >
+              </li>
+              <li class="nav-links-containers">
+                <a href="#" class="header-anchors"
+                  ><button class="nav-links">Recipes</button></a
+                >
+              </li>
+              <li class="nav-links-containers">
+                <a href="#" class="header-anchors"
+                  ><button class="nav-links">Flyers</button></a
+                >
+              </li>
+              <li class="nav-links-containers">
+                <a href="#" class="header-anchors"
+                  ><button class="nav-links">Careers</button></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <!-- END-BAR -->
+        <div class="end-header-bar-container">
+          <div class="end-header-bar">
+            <!-- Search Bar -->
+            <div class="search-bar">
+              <input
+                class="search-bar-itself"
+                type="text"
+                placeholder="Search products"
+              />
+              <button href="#" class="search-button">&#x1F50D;&#xFE0E;</button>
+            </div>
+  
+            <!-- Cart button -->
+            <div class="cart-button-container">
+              <a href="page4.html"
+                ><button class="cart-button">
+                  <i class="fa-solid fa-cart-shopping"></i> $0.00
+                </button>
+              </a>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+    <main>
+      
+      <h1 class="grocerycart">My Grocery Cart</h1>
+
+          <div class="leftbloc">
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <tr class="item1">
+                  <td class="product item1">Milk</td>
+                  <td class="price item1">5$</td>
+                  <td class="quantity item1">
+                      <input type="number" min="1" class="quantity-number">
+                  </td>
+                  <td class="total item1">10$</td>
+              </tr>
+              <tr class="item2">
+                  <td class="product item2">Apple</td>
+                  <td class="price item2">2$</td>
+                  <td class="quantity item2">
+                      <input type="number" min="1" class="quantity-number">
+                  </td>
+                  <td class="total item2">30$</td>
+              </tr>
+              <tr class="item3">
+                  <td class="product item3">Strawberry</td>
+                  <td class="price item3">5$</td>
+                  <td class="quantity item3">
+                      <input type="number" min="1" class="quantity-number">
+                  </td>
+                  <td class="total item3">40$</td>
+              </tr>
+            </table>
+        </div>
+    
+        <div class="rightbloc">
+            <h1 class="summary">Summary</h1>
+            <h2 class="subtotal">Subtotal</h2>
+            <p class="subtotal">Estimated QST</p>
+            <p class="subtotal">Estimated GST</p>
+            <h2 class="estimated">Estimated Total</h2>
+            <input type="button" name="checkout" id="checkout" value="CHECKOUT" >
+            <p class="help">Need help? <a href="">Contact us</a></p>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-navigation-bar">
+            <div class="footer-navigation-bar-content">
+              <div class="footer-navigation-bar-buttons">
+                  
+                <button class="nav-left-button">Fr</button>
+                <button class="nav-left-button">FAQ</button>
+                <button class="nav-left-button">Find a store</button>
+                <button class="nav-left-button">Help center</button>
+               
+              </div>
+              <div class="social-media">
+                <button class="social-media-buttons fa fa-facebook"></button>
+                <button class="social-media-buttons fa fa-instagram"></button>
+                <button class="social-media-buttons fa fa-youtube"></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="footer-grey-section">
+            <div class="footer-content-container">
+              <div class="footer-grey-section-first-row">
+                <div class="footer---my-account">
+                  <h3 class="footer-header-category">My Account</h3>
+                  <a href="#" class="footer-anchor">Online Grocery</a>
+                  <a href="#" class="footer-anchor">Flyer</a>
+                  <a href="#" class="footer-anchor">Coupons</a>
+                  <a href="#" class="footer-anchor">Recipes and Occasions</a>
+                  <a href="#" class="footer-anchor">My Account</a>
+                  <a href="#" class="footer-anchor">Just For Me</a>
+                  <a href="#" class="footer-anchor">Online Grocery Services</a>
+                  <a href="#" class="footer-anchor">Curbside Pickup</a>
+                </div>
+      
+                <div class="footer---what-we-offer">
+                  <h3 class="footer-header-category">What We Offer</h3>
+                  <a href="#" class="footer-anchor">Online Grocery</a>
+                  <a href="#" class="footer-anchor">Our Private Brands</a>
+                  <a href="#" class="footer-anchor">Our Partners</a>
+                  <a href="#" class="footer-anchor">Services</a>
+                  <a href="#" class="footer-anchor">Gift Card</a>
+                  <a href="#" class="footer-anchor">Contests</a>
+                </div>
+      
+                <div class="footer---get-to-know-us">
+                  <h3 class="footer-header-category">Get to Know Us</h3>
+                  <a href="#" class="footer-anchor">Corporate Site</a>
+                  <a href="#" class="footer-anchor">Supplier Relations</a>
+                  <a href="#" class="footer-anchor">About Us</a>
+                  <a href="#" class="footer-anchor">Corporate Responsibility</a>
+                  <a href="#" class="footer-anchor">Careers</a>
+                </div>
+      
+                <div class="footer---images-column">
+                  <button class="footer-promotion-button">
+                    <img
+                      src="img/footer-img.jpg"
+                      alt="A photo of promotion"
+                      height="auto"
+                      width="auto"
+                      class="footer-promotion-img"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="footer---newsletter">
+                <h3 class="footer-header-category">Newsletter</h3>
+                <p class="newsletter-survey-text">
+                  Sign up to shopping.ca to receive offers and exclusive sales!
+                  <a href="#" class="footer-anchor-underlined">Learn more</a>
+                </p>
+              </div>
+      
+              <div class="footer---survey">
+                <h3 class="footer-header-category">
+                  We care about you! Take our survey
+                </h3>
+                <p class="newsletter-survey-text">
+                  Tell us how we're doing. Take a
+                  <a href="#" class="footer-anchor-underlined">Survey.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="footer-copyright">
+            <div class="ownership-laws">
+              <nav class="conditions">
+                <div class="conditions-anchor">
+                  <a href="#" class="copyright-anchors">Condition of Use</a>
+                  <a href="#" class="copyright-anchors">Privacy policy</a>
+                </div>
+              </nav>
+              <p class="copyright">&copy; conUmart Inc 2022</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>

@@ -10,9 +10,10 @@ body {
     background-color: #f7f7f7;
 }
 
+
 .page-wrapper {
     height: 100%;
-    display: table;
+    display: table;  
 }
 
 .page-wrapper .page-inner {

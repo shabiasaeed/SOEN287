@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------------------------------------
+1. Organizing the display
+--------------------------------------------------------------*/
+
+.shop-title-container {
+background-image: url(images/fruit.jpg);
+  background-size: cover;
+  height: 80px;
+}
+
+.bottom-bar-container {
+  background-color: black;
+  height: 80px;
+}
+
+/*--------------------------------------------------------------
+2. Working on that topbar of the header
+----------------------------------------------------------------- */
+
+/* ---------------------DESKTOP VERSION-------------------------- */
+
+/* Centering all the content, and justify them and displaying them on the same row */
+.top-bar-container {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.home-anchor {
+  grid-column: 1/2;
+  justify-self: start;
+  height: 100%;
+}
+
+.top-bar-misc-container {
+  grid-column: 2/-1;
+  padding-right: 15px;
+  justify-self: end;
+}
+
+/* Styling the ConUmart anchor */
+.shop-title {
+  color: #b22222;
+  background-color: white;
+  border: none;
+  height: 100%;
+  font-size: 1.5em;
+  padding: 0 40px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  border-bottom: 0.25em solid #b22222;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.shop-title:hover {
+  color: white;
+  background-color: #b22222;
+  border-bottom: none;
+}
+
+/* Styling the top bars misc anchors */
+.top-bar-misc-container {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  color: white;
+}
+
+.top-bar-misc-anchors {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.top-bar-misc-anchors:hover {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+/* ----------------------MOBILE VERSION------------------------------- */
+
+/* Depending on the size, we adjust the width to make it look better */
+@media only screen and (max-width: 1440px) {
+  /* Remove the min-width and width conditions from the containers */
+  .top-bar-container {
+    width: 75%;
+    min-width: none;
+  }
+
+  .shop-title {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Remove the min-width and width conditions from the containers */
+  .top-bar-container {
+    width: 100%;
+    min-width: none;
+  }
+
+  /* Fixing the font size of title*/
+  .shop-title {
+    font-size: 1.25em;
+    padding: 0 15px;
+  }
+
+  /* Hide top misc bar's text */
+  .top-bar-misc-anchors-content {
+    display: none;
+  }
+
+  .top-bar-misc-anchors {
+    font-size: 0.9em;
+  }
+}
+
+/*=========================================================================
+3. Working on the navigation bar
+===========================================================================*/
+
+/* -----------------------MOBILE VERSION------------------------------------ */
+
+/* Contains everything */
+
+.nav-container {
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  height: auto;
+  padding: 2em 0;
+}
+
+/* placing buttons at right */
+.nav-toggle {
+  margin: 0em 1em;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* justifying and styling buttons (menu and close buttons) */
+.menu-icon,
+.close-icon {
+  width: 1.5em;
+  font-size: 1.25em;
+}
+
+/* hidding the checkbox */
+.nav-checkbox {
+  display: none;
+}
+
+/* Hiding the cross icon */
+/* For this to work, it needed to take priority over the font. Had to use id instead of class */
+#close-icon {
+  display: none;
+}
+
+/* In mobile the anchors need to be in column form */
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+/* Hide list dots and hide the content */
+li {
+  list-style: none;
+  display: none;
+}
+
+/* Aligning my online groceries catchphrase to left */
+.logo {
+  display: block;
+  margin-right: auto;
+  margin-left: 0;
+  padding: 0 1em;
+}
+
+/* Styling the anchors */
+.header-anchors {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  height: 80px;
+}
+
+.nav-links-containers {
+  width: 100%;
+}
+
+.nav-links {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 0 0.5em;
+}
+
+.nav-links:hover {
+  color: black;
+  background-color: white;
+}
+
+/* The next three lines menu the menu and cross button works */
+/* Display content when menu(3 bars) button is clicked (checked) */
+#nav-checkbox:checked ~ ul.nav-content li {
+  display: block;
+}
+
+/* close button pops up when the menu is clicked (checked) */
+#nav-checkbox:checked ~ label.nav-toggle .close-icon {
+  display: block;
+}
+
+/* Menu button dissappears when clicked (checked)*/
+#nav-checkbox:checked ~ label.nav-toggle .menu-icon {
+  display: none;
+}
+
+/* --------------------DESKTOP VERSION----------------------- */
+
+@media only screen and (min-width: 1024px) {
+  /* hides menu and cross button when in desktop */
+  .nav {
+    width: 50%;
+    margin: auto;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  /* removing padding for better appearance */
+  .nav-container {
+    padding: 0em;
+  }
+
+  /* The content needs to be displayed in a row in desktop mode */
+  .nav-content {
+    flex-direction: row;
+    gap: 0;
+    height: 80px;
+  }
+
+  /* Changing width also so it looks better */
+  .nav-links-containers {
+    width: auto;
+  }
+
+  /* content must be shown which is initially hidden for mobile version */
+  li {
+    display: block;
+  }
+}
+
+/*---------------------------------------------------------------
+4.Working on the End bar (search, cart, catchphrase)
+----------------------------------------------------------------- */
+
+/* ------------------------DESKTOP VERSION----------------------- */
+
+/* Centering all of the content */
+.end-header-bar-container {
+  height: 80px;
+}
+
+.end-header-bar {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding: 0 10px;
+
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: column;
+  column-gap: 30px;
+}
+
+/* Justifying and Styling the search bar */
+.search-bar {
+  grid-column: 1/-2;
+  display: grid;
+  justify-self: start;
+  grid-template-columns: 6fr 1fr;
+  height: 50%;
+  width: 100%;
+}
+
+.search-bar-itself {
+  align-items: center;
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.search-button {
+  grid-column: -2/-1;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.search-button:hover {
+  background-color: lightgray;
+}
+
+/* Styling and Justifying the cart button */
+
+.cart-button-container {
+  justify-self: end;
+  width: 100%;
+  height: 60%;
+}
+
+.cart-button {
+  color: white;
+  background-color: #b22222;
+  border: none;
+  height: 100%;
+
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 4px;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  color: #b22222;
+  background-color: white;
+  border: 1px solid #b22222;
+}
+
+/* ----------------------MOBILE VERSION------------------------------- */
+/* Depending on the size, we adjust width it to make look as good as possible */
+@media only screen and (max-width: 1440px) {
+  /* Remove the min-width and width conditions from the containers */
+  .end-header-bar {
+    width: 75%;
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  /* Remove the min-width and width conditions from the containers */
+  .end-header-bar {
+    width: 90%;
+    min-width: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Remove the min-width and width conditions from the containers */
+  .end-header-bar {
+    width: 100%;
+    min-width: none;
+  }
+
+  /* Making cart button smaller */
+  .cart-button {
+    font-size: 0.75em;
+    padding: 5px 10px;
+  }
+}

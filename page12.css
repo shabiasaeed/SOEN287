@@ -1,0 +1,335 @@
+
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #000000;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #000000;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button2 {
+background-color: #000000;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    background-color: #000000;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    grid-column: 1/2;
+}
+
+#sidebar {
+    width: 250px;
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #000000;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #000000;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #8d1403;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #8d1403;
+}
+
+a[data-toggle="collapse"] {
+    /*position: relative;*/
+}
+
+.dropdown-toggle::after {
+    display: block;
+   /* position: absolute;*/
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #8d1403;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.management-table{
+    min-width: 1000px;
+}
+
+/* ---------------------------------------------------
+    Form Style
+----------------------------------------------------- */
+
+
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    /*position: absolute;*/
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+
+
+
+.order{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 150px repeat(4, auto) auto;
+    box-sizing: border-box;
+}
+
+.order h3{
+    color: white;
+    background-color: grey;
+}
+
+.order-header{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.order-header h1{
+    background-color: grey;
+    color: white;
+}
+
+.order-info{
+    background-color: lightgray;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-gap: 5px;
+}
+
+.order-info h3{
+    text-align: center;
+}
+
+.order-info p{
+    text-align: center;
+}
+
+.order-info .order-date{
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.order-info .order-total{
+    display: inline-block;
+    grid-column: 4/5;
+    text-align: center;
+}
+
+
+
+
+
+.order-edit{
+    background-color: lightgray;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+
+.order table{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.order th{
+    color: white;
+    background-color: grey;
+    border: solid white;
+    height: 60px;
+    text-align: center;
+}
+
+.order td{
+    border: solid white;
+    text-align: center;
+    height: 100px;
+    font-weight: bolder;
+}
+
+p{
+    font-weight: bolder;
+}
+
+input{
+    width: 45px;
+    text-align: center;
+}
+
+.end{
+    grid-column: 4/-1;
+    grid-row: 4/5;
+    width: 60%;
+    float: right;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 100px;
+}
+
+
+
+
+
+@media only screen and (max-width:768px){
+    .order-info{
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+
+    .order-info .account-num{
+        grid-column: 1/-1;
+    }
+
+    .order-info .order-num{
+        grid-column: 1/-1;
+    }
+
+    .order-info .order-date{
+        grid-column: 1/-1;
+    }
+
+    .order-info .order-total{
+        grid-column: 1/-1;
+    }
+
+    .order-edit{
+        grid-row: 4/5;
+    }
+    .end{
+        grid-row: 5/-1;
+    }
+}

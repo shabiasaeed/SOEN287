@@ -1,59 +1,44 @@
-*{
-	margin:0;
-	padding:0;
-	list-style:none;
-	text-decoration:none;
-	font-family: 'Montserrat';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-	
-.header{
-	width:100%;
-	height:80px;
-	display: block;
-	background-image: url(../images/fruit.jpg);
-}
-
-.inner_header{
-	width: 60%;
-	height: 100%;
-	display: block;
-	margin: 0 auto;
-	background-color: #B22222;
-}
-
-.logo_container{
-	height: 100%;
-	display: table;
-	float:left;
-}
-
-.logo_container h1{
-	color: white;
-	height:100%;
-	display: table-cell;
-	vertical-align:middle;
-	font-family:'Montserrat';
-	font-size: 32px;
-	font-weight:150;
-}
-
-.logo_container h1 span{
-	font-weight:900;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.container h2{
-	text-align: center;
-	font-size: 25px;
+/* --------------------------Log In Message and Box ------------------------------*/
+a{
+	text-decoration: none;
 }
 
 .log {
-	margin-top:4%;
-	margin-bottom:4%;
+	color:black;
+	font-size:30px;
 	text-align:center;
-	font-size:32px;
+	padding-bottom:5%;
+	padding-top:5%;
+	margin:auto;
 }
+
+.container{
+	padding:20px;
+	width:40%;
+	margin:auto;
+	background-color:#A9A9A9;
+	font-size: 16px;
+	color: white;
+	border-radius: 10px;
+}
+
+.container h2{
+	text-align:center;
+	font-size:20px;
+}
+
 
 .button{
 	background-color: #333;
@@ -69,8 +54,9 @@
 }
 
 .button:hover{
-	background:#B22222;
+	background:#B22222; 
 }
+
 
 .my-form{
 	padding:20px;
@@ -78,6 +64,7 @@
 
 .form-group{
 	padding-bottom:20px;
+
 }
 
 .my-form label{
@@ -87,11 +74,15 @@
 .my-form input[type="text"], .my-form textarea{
 	padding:8px;
 	width:100%;
+	border-radius: 10px;
+	border-color: none;
 }
 
 .my-form input[type="password"], .my-form textarea{
 	padding:8px;
 	width:100%;
+	border-radius: 10px;
+	border-color: none;
 }
 
 .clr{
@@ -104,30 +95,251 @@ a {
 }
 
 
+/*-------------------------------------Footer--------------------------*/
 
-
-.right{
-    float:right;
+/* 1. Fixing color backgrounds */
+.footer-container {
+  display: grid;
+  grid-template-rows:1fr 5fr 1fr;
 }
 
-.left{
-    float:left;
+.footer-navigation-bar {
+  background-color: #B22222;
 }
 
-div.a {
-  text-align: center;
+.footer-grey-section {
+  background-color: rgb(0, 0, 0);
+}
+
+/* The bottom footer, that matches the header.*/
+.footer-copyright {
+  background-image:url(../imgs/fruit.jpg);
+
+  background-size: cover;
+}
+
+.copyright-background {
+  object-fit: cover;
+  grid-template-columns: 1/-1;
+  height: 100px;
 }
 
 
-footer {
- 
-  background-color: #000;
+.footer-navigation-bar-content {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%; 
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  background-color:#B22222;
+}
+
+.footer-navigation-bar-buttons {
+  justify-self: start;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  background-color:#B22222;
+}
+
+.social-media {
+  justify-self: end;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.nav-left-button {
+  background-color: #B22222;
   color: #fff;
-  padding: 40px;
-  position: absolute;
-  bottom: 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  cursor: pointer;
   width: 100%;
-  left: 0%
-  /* position: fixed;
-  z-index: 1; */
+  height: 100%;
+  border: none;
+  font-size: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.nav-left-button:hover {
+  background-color: white;
+  color: red;
+  
+}
+
+.social-media-buttons {
+  background-color:#B22222;;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.social-media-buttons:hover {
+  background-color: white;
+  color: red;
+}
+
+.footer-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%; 
+  max-width: 1000px;
+  padding: 1em;
+  margin: auto;
+  row-gap: 1em;
+}
+
+.footer-grey-section-first-row {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5%;
+}
+/* All the columns of first rows are in this section */
+.footer---my-account,
+.footer---what-we-offer,
+.footer---get-to-know-us,
+.footer--images-column {
+  display: grid;
+  row-gap: 1em;
+  align-self: start;
+  
+}
+
+.footer-anchor {
+  color: white;
+}
+
+.footer-anchor:link {
+  text-decoration: none;
+}
+
+.footer-anchor:visited {
+  text-decoration: lightgray;
+}
+
+.footer-anchor:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: underline;
+}
+
+.footer-header-category {
+  color: white;
+  font-size: 1.5em;
+}
+
+.footer-promotion-img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-promotion-button {
+  cursor: pointer;
+  border: none;
+}
+
+.footer-promotion-button:hover {
+  opacity: 0.5;
+}
+
+
+.newsletter-survey-text {
+  color: white;
+}
+
+.footer---newsletter,
+.footer---survey {
+  color: white;
+}
+
+.footer-anchor-underlined {
+  color: white;
+}
+
+.footer-anchor-underlined:link {
+  text-decoration: underline;
+}
+
+.footer-anchor-underlined:visited {
+  text-decoration: lightgray;
+}
+
+.footer-anchor-underlined:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.ownership-laws {
+  width: 100%; 
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.conditions {
+  justify-self: start;
+}
+
+.copyright {
+  justify-self: end;
+  color: white;
+}
+
+.conditions-anchor {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2em;
+}
+
+.copyright-anchors {
+  color: white;
+}
+
+.copyright-anchors:link {
+  text-decoration: underline;
+}
+
+.copyright-anchors:visited {
+  text-decoration: lightgray;
+}
+
+.copyright-anchors:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .footer-container {
+    grid-template-rows: 5% 100% 5%;
+  }
+
+  .footer-grey-section-first-row {
+    grid-auto-flow: row;
+    row-gap: 2em;
+  }
+
+  .footer-anchor {
+    justify-content: center;
+  }
+
+  .footer---newsletter {
+  }
 }
