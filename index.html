@@ -28,11 +28,11 @@
 
          <!-- Misc bar at the right -->
          <div class="top-bar-misc-container">
-           <a href="page4.html" class="top-bar-misc-anchors"
+           <a href="page4.php" class="top-bar-misc-anchors"
              ><i class="fa-solid fa-clipboard-list"></i>
              <p class="top-bar-misc-anchors-content">Shopping List</p></a
            >
-           <a href="login_p5.html" class="top-bar-misc-anchors"
+           <a href="login_p5.php" class="top-bar-misc-anchors"
              ><i class="fa-solid fa-user"></i>
              <p class="top-bar-misc-anchors-content">My account</p></a
            >
@@ -94,23 +94,27 @@
 
          <!-- Cart button -->
          <div class="cart-button-container">
-           <a href="page4.html"
-             ><button class="cart-button">
-               <i class="fa-solid fa-cart-shopping"></i> $0.00
-             </button>
-           </a>
+          <a href="page4.php"
+          ><button class="cart-button" id="cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> 
+            <p id="total-cost">$0.00</p>
+            <input id="cost-of-item" style="display:none" value = "0" /> 
+          </button>
+        </a>
          </div>
        </div>
        <hr />
      </div>
    </header>
 
+   <body>
+    <script type="text/javascript" src="p2-common.js"></script>
 <div class="flex-container">
   <div style="order: 1">
     <img src="dp3-modified.png">
 
     <center>
-      <p><a href="page2_1_Dairy.html">Dairy Products</a>
+      <p><a href="page2_1_Dairy.php">Dairy Products</a>
       <p>
   </div>
   </center>
@@ -118,7 +122,7 @@
   <div style="order: 2">
     <img src="FV-modified.png">
     <center>
-      <p> <a href="page2_Fruits_Veggies.html">Fruits & Vegetables </a>
+      <p> <a href="page2_Fruits_Veggies.php">Fruits & Vegetables </a>
       <p>
   </div>
   </center>
@@ -126,7 +130,7 @@
   <div style="order: 3">
     <img src="BB-modified.png">
     <center>
-      <p><a href="page2_BreadAndBakery.html">Bread & Bakery </a>
+      <p><a href="page2_BreadAndBakery.php">Bread & Bakery </a>
       <p>
   </div>
   </center>
@@ -134,7 +138,7 @@
   <div style="order: 4">
     <img src="MP2-modified.png">
     <center>
-      <p> <a href="page2_1_Meat.html">Meat & Poultry</a>
+      <p> <a href="page2_1_Meat.php">Meat & Poultry</a>
       <p>
   </div>
   </center>
@@ -143,7 +147,7 @@
     <br>
     <img src="FP.png">
     <center>
-      <p> <a href="page2_Frozen.html">Frozen Products </a>
+      <p> <a href="page2_Frozen.php">Frozen Products </a>
       <p>
   </div>
   </center>
@@ -158,6 +162,7 @@
 </div>
 
 <div class="clr"></div>
+</body>
 <footer>
   <link rel="stylesheet" href="css\footer.css">
   <div class="footer-container">

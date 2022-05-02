@@ -1,0 +1,21 @@
+
+
+
+
+<users>
+    <firstname> John</firstname>
+    <lastname> Doe </lastname>
+    <emailaddress> admin@hotmail.com</emailaddress>
+    <pwd> admin</pwd>
+
+
+    <addressline1> </addressline1>
+    <apptnum> </apptnum>
+    <city></city>
+    <country></country>
+    <province></province>
+    <postalcode></postalcode>
+    <phonenumber></phonenumber>
+
+    
+</users>

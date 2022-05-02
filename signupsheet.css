@@ -78,6 +78,8 @@ PERSONAL INFORMATION===== BOX 1
   border-radius:10px; 
 }
 
+
+
 /*-----------------------------
 CONTACT INFORMATION=====BOX 2
 ------------------------------*/
@@ -413,6 +415,58 @@ FOOTER, TERMS AND CONDITIONS, CONTACT
   color: rgba(255, 255, 255, 0.37);
   text-decoration: none;
 }
+
+@media only screen and (max-width: 1024px) {
+  .PersonalInfo-container {
+    width: 100%;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .PersonalInfo-container {
+    width: 100%;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .PersonalInfo-container {
+    width: 100%;
+    /* grid-template-columns: 1fr; */
+  }
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 1024px) {
+    .ContactInfo {
+      width: 100%;
+      /* grid-template-columns: repeat(3, 1fr); */
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .ContactInfo {
+      width: 100%;
+      /* grid-template-columns: repeat(2, 1fr); */
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .ContactInfo {
+      width: 100%;
+      /* grid-template-columns: 1fr; */
+    }
+
+
+
+
 
 @media only screen and (max-width: 680px) {
   .footer-container {

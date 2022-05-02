@@ -10,6 +10,40 @@ body {
     background-color: #f7f7f7;
 }
 
+.main-container {
+    display: grid;
+    width: 50%;
+    margin: auto;
+  
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-items: center;
+    align-content: center;
+  
+    padding: 10px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .main-container {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .main-container {
+      width: 100%;
+      grid-template-columns: repeat(2/3, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-container {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
 
 .page-wrapper {
     height: 100%;
@@ -23,27 +57,29 @@ body {
 
 .element-wrapper {
     width: 180px;
-    padding: 7.5px;
-    margin: 7.5px auto;
+    /* padding: 7.5px;
+    margin: 7.5px auto; */
     background-color: #fff;
 }
 
 
+
 /* CSS for tablet resizing */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* @media only screen and (max-width: 1024px) {
     .element-wrapper {
-        width: 145px;
-        margin: 15px auto;
-    }
-}
+        width: 100%; */
+        /* margin: 15px auto; */
+    /* }
+} */
 
 
 /* CSS for mobile resizing */
-@media (min-width: 480px) and (max-width: 767px) {
+/* @media only screen and (max-width: 768px) {
     .element-wrapper {
-        width: 172.5px;
-    }
-}
+        width: 100%; */
+	  /* margin: 15px auto; */
+    /* }
+} */
 
 .element-wrapper:hover .add-to-cart {
     left: 50%;
@@ -82,7 +118,7 @@ body {
     width: 660px;
     height: 100%;
     background-color: #000000;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .info-inner {
@@ -190,17 +226,17 @@ body {
 
 
 /* CSS for tablet resizing */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* @media only screen and (max-width: 1024px) {
+.column {
+    width: 100%; */
+    /* margin: 15px auto; */
+    /* }
+} */
+
+/* CSS for mobile resizing */
+/* @media (min-width: 375px) and (max-width: 812px) and (orientation: portrait) {
 .column {
     width: 172.5px;
     margin: 15px auto;
     }
-}
-
-/* CSS for mobile resizing */
-@media (min-width: 480px) and (max-width: 767px) {
-.column {
-    width: 172.5px;
-    }
-}
-
+} */

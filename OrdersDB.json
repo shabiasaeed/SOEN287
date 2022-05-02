@@ -1,0 +1,84 @@
+[
+  {
+    "accountnumber":"G932562471",
+    "orderdetails":[
+      {
+        "ordernumber":"100521",
+        "orderdate":"January 1, 2022",
+        "ordertotal":12.55,
+        "ordernum":[
+          {
+            "items":[
+              {
+                "name":"chicken breast",
+                "quantity":3,
+                "price":1
+              },
+              {
+                "name":"potato",
+                "quantity":2,
+                "price":1
+              } 
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "accountnumber":"S166734349",
+    "orderdetails":[
+      {
+        "ordernumber":"100399",
+        "orderdate":"November 26, 2021",
+        "ordertotal":15.00,
+        "ordernum":[
+          {
+            "items":[
+              {
+                "name":"orange",
+                "quantity":10,
+                "price":1
+              },
+              {
+                "name":"lemon",
+                "quantity":10,
+                "price":1
+              } 
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+
+  {
+    "accountnumber":"R721953416",
+    "orderdetails":[
+      {
+        "ordernumber":"100325",
+        "orderdate":"November 14,2021",
+        "ordertotal":32.15,
+        "ordernum":[
+          {
+            "items":[
+              {
+                "name":"milk carton",
+                "quantity":5,
+                "price":1
+              },
+              {
+                "name":"milk bag",
+                "quantity":5,
+                "price":1
+              } 
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,4 +1,3 @@
-<<!DOCTYPE html>
   <!DOCTYPE html>
   <html lang="en" dir="ltr">
 
@@ -15,143 +14,217 @@
 
   </head>
 
-  <body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <a href="mainpage">
+          <h3>ConUmart</h3>
+        </a>
+      </div>
 
-    <div class="wrapper">
-      <!-- Sidebar  -->
-      <nav id="sidebar">
-        <div class="sidebar-header">
-          <a href="index.html">
-            <h3>ConUmart</h3>
-          </a>
-        </div>
+      <ul class="list-unstyled components">
 
-        <ul class="list-unstyled components">
+        <li>
+          <a href="#">👤 Users</a>
+        </li>
+        <li>
+          <a href="put-products-html">🔎 Products</a>
+        </li>
+        <li>
+          <a href="put-order-html">📝 Orders</a>
+        </li>
+        <li>
+          <a href="#">💡 Feedback</a>
+        </li>
+        <li>
+          <a href="#">📊 Sales</a>
+        </li>
+        <li>
+          <a href="#">💲 Promotions</a>
+        </li>
+        <li>
+          <a href="#">💳 Coupons</a>
+        </li>
+        <li>
+          <a href="#">📃 Invoices</a>
+        </li>
+        <li>
+          <a href="#">👭 Employees</a>
+        </li>
+        <li>
+          <a href="#">🔧 Manager</a>
+        </li>
 
-          <li>
-            <a href="page9.html">&#128100; Users</a>
-          </li>
-          <li>
-            <a href="page7.html">&#128270; Products</a>
-          </li>
-          <li>
-            <a href="order_list_p11.html">&#128221; Orders</a>
-          </li>
-          <li>
-            <a href="#">&#128161; Feedback</a>
-          </li>
-          <li>
-            <a href="#">&#128202; Sales</a>
-          </li>
-          <li>
-            <a href="#">&#128178; Promotions</a>
-          </li>
-          <li>
-            <a href="#">&#128179; Coupons</a>
-          </li>
-          <li>
-            <a href="#">&#128195; Invoices</a>
-          </li>
-          <li>
-            <a href="#">&#128109; Employees</a>
-          </li>
-          <li>
-            <a href="#">&#128295; Manager</a>
-          </li>
-
-        </ul>
-      </nav>
-      <div id="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="card" style="background-color: #999999; color: #fff; text-align: center; font-size: 30px;>
-                            <div class=" card-header">
-                Back-Store Management
-              </div>
+      </ul>
+    </nav>
+    <div id="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" style="background-color: #999999; color: #fff; text-align: center; font-size: 30px;>
+                            <div class=" card-header"="">
+              Back-Store Management
+          </div>
 
 
-              <center>
-                <h2>Edit Product Details</h2>
-              </center>
-              <form class="form-inline" action="/action_page.php">
-                <label>
-                  Product Name
-                  <input id="name" name="name" type="text" />
-                </label>
-                <label>
-                  Product Brand
-                  <input id="brand" name="brand" type="text" />
-                </label>
-                <label>
-                  Product Description
-                  <div class="col-75">
-                    <textarea id="subject" name="subject" style="height:200px"></textarea>
+          <div class="product-Details">
+
+							<h4 class="Product-Details"> Edit product details </h4>
+              <div class="col-lg-8">
+
+					<div class="card2">
+						<div class="card-body">
+
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Product Name</h6>
+                </div>
+                <div class="col-sm-9">
+                <input id="name" name="name" type="text">
                   </div>
-                  <label>
-                    Product ID
-                    <input id="ID" name="ID" type="text" />
+                </div>
+
+
+                <div class="row mb-3">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Brand Name</h6>
+                  </div>
+                  <div class="col-sm-9">
+                  <input id="name" name="name" type="text">
+                    </div>
+                  </div>
+
+
+
+                  <div class="row mb-3">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Product Description</h6>
+                    </div>
+                    <div class="col-sm-9">
+                      <textarea id="subject" name="subject" style="height:200px"></textarea>
+                    </div>
+                      </div>
+
+                    <div class="row mb-3">
+                      <div class="col-sm-3">
+                        <h6 class="mb-0">Product ID</h6>
+                      </div>
+                      <div class="col-sm-9">
+                      <input id="ID" name="ID" type="text">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Stock Quantity </h6>
+                        </div>
+                        <div class="col-sm-9">
+                        <input id="stock" name="stock" type="number">
+                          </div>
+                            </div>
+
+
+                        <div class="row mb-3">
+                          <div class="col-sm-3">
+                            <h6 class="mb-0">Product Weight </h6>
+                          </div>
+                           <div class="col-sm-9">
+
+                          <input id="Weight" name="weight" type="number">
+
+                          <select id="unit" name="unit">
+
+                            <option value="kg">kg</option>
+                            <option value="lb">lb</option>
+</select>
+                          </div>
+  </div>
+
+
+  <div class="row mb-3">
+    <div class="col-sm-3">
+      <h6 class="mb-0">Price</h6>
+    </div>
+    <div class="col-sm-9">
+      <input id="price" name="price" type="text">
+    </div>
+  </div>
+  <div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Sale</h6>
+								</div>
+								<div class="col-sm-9">
+
+                 <label class="container">Yes
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
                   </label>
-                  <label>
-                    Stock Quantity
-                    <input id="stock" name="stock" type="number" />
-                  </label>
-                  <label>
 
-                    Weight
-                    <input id="Weight" name="weight" type="number" /> <select id="unit" name="unit">
-                      <option value="kg">kg</option>
-                      <option value="lb">lb</option>
-                    </select>
+                  <label class="container">No
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label> <br>
 
-                  </label>
+                  </div>
+                  <div class="row mb-3">
+                								<div class="col-sm-3">
+                									<h6 class="mb-0">Sale's last day</h6>
+                								</div>
+                								<div class="col-sm-9">
+                									  <input type="date" id="salelastday" name="salelastday">
+                								</div>
+                							</div>
+                              <div class="row mb-3">
+              								<div class="col-sm-3">
+              									<h6 class="mb-0"> Sale items minimum quantity</h6>
+              								</div>
+              								<div class="col-sm-9">
+              								  <input id="minimum" name="mimimum" type="number">
+              								</div>
+              							</div>
+
+                            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Sale price for minimum quantity</h6>
+              </div>
+              <div class="col-sm-9">
+                <input id="saleprice" name="salepirce" type="text">
+              </div>
+            </div>
+            <div class="row mb-3">
+            								<div class="col-sm-3">
+            									<h6 class="mb-0">Price per weight</h6>
+            								</div>
+            								<div class="col-sm-9">
+            								  <input id="priceperweight" name="priceperweight" type="text">
+            								</div>
+            							</div>
+                          <div class="row mb-3">
+              								<div class="col-sm-3">
+              									<h6 class="mb-0">Product images</h6>
+              								</div>
+              								<div class="col-sm-9">
+              								  <input type="file" id="images" name="productimages">
+              								</div>
+              							</div>
 
 
-                  <label>
-                    Price
-                    <input id="price" name="price" type="text" />
-                  </label>
-                  <label>
-                    Sale
+                  <br>
 
-                    <label class="container">Yes
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                    </label>
-
-                    <label class="container">No
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label> <br />
-
-                    <label>
-                      Sale's Last Day
-
-                      <input type="date" id="salelastday" name="salelastday">
-                    </label>
-
-                    <label>
-                      Sale items minimum quantity
-                      <input id="minimum" name="mimimum" type="number" />
-                    </label>
-                    <label>
-                      Sale price for minimum quantity
-                      <input id="saleprice" name="salepirce" type="text" />
-                    </label>
-                    <label>
-                      Price per weight
-                      <input id="priceperweight" name="priceperweight" type="text" />
-                    </label>
-                    <label>
-                      Product images
-                      <input type="file" id="images" name="productimages">
-                    </label>
-                    <br />
-
-                    <a class="button" href="page7.html">Save Changes</a>
+                  <a class="button" href="page7.html">Save Changes</a>
 
 
 
 
-              </form>
-  </body>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

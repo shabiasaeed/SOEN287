@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------------------------------------
+1. Organizing the display
+--------------------------------------------------------------*/
+
+.shop-title-container {
+  background-image: url(img/fruit.jpg);
+  background-size: cover;
+  height: 80px;
+}
+
+.bottom-bar-container {
+  background-color: black;
+  height: 80px;
+}
+
+/*--------------------------------------------------------------
+2. Working on that topbar of the header
+----------------------------------------------------------------- */
+
+/* ---------------------DESKTOP VERSION-------------------------- */
+
+/* Centering all the content, and justify them and displaying them on the same row */
+.top-bar-container {
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  padding: 0 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.home-anchor {
+  grid-column: 1/2;
+  justify-self: start;
+  height: 100%;
+}
+
+.top-bar-misc-container {
+  grid-column: 2/-1;
+  padding-right: 15px;
+  justify-self: end;
+}
+
+/* Styling the ConUmart anchor */
+.shop-title {
+  color: #b22222;
+  background-color: white;
+  border: none;
+  height: 100%;
+  font-size: 1.5em;
+  padding: 0 40px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  border-bottom: 0.25em solid #b22222;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.shop-title:hover {
+  color: white;
+  background-color: #b22222;
+  border-bottom: none;
+}
+
+/* Styling the top bars misc anchors */
+.top-bar-misc-container {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  color: white;
+}
+
+.top-bar-misc-anchors {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.top-bar-misc-anchors:hover {
+  color: rgba(255, 255, 255, 0.432);
+}
+
+/* ----------------------MOBILE VERSION------------------------------- */
+
+/* Depending on the size, we adjust the width to make it look better */
+@media only screen and (max-width: 1440px) {
+  /* Remove the min-width and width conditions from the containers */
+  .top-bar-container {
+    width: 75%;
+    min-width: none;
+  }
+
+  .shop-title {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Remove the min-width and width conditions from the containers */
+  .top-bar-container {
+    width: 100%;
+    min-width: none;
+  }
+
+  /* Fixing the font size of title*/
+  .shop-title {
+    font-size: 1.25em;
+    padding: 0 15px;
+  }
+
+  /* Hide top misc bar's text */
+  .top-bar-misc-anchors-content {
+    display: none;
+  }
+
+  .top-bar-misc-anchors {
+    font-size: 0.9em;
+  }
+}

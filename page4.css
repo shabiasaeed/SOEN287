@@ -25,7 +25,6 @@
       padding-top: 25px;
   }
 
-
   .leftbloc{
       border: solid;
       background-color: lightgrey;
@@ -33,36 +32,92 @@
       height: 900px;
       width: 100%;
       grid-column: 1/2;
-      
   }
 
-  table{
+  /* .leftbloc table{
       color: lightgray;
-      width: 95%;
+      width: 80%;
       box-sizing: border-box;
       margin: 25px auto;
-      border: solid white;
-  }
+      border-collapse: collapse;
+  } */
 
-  th{
+  /* .leftbloc th{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
       background-color: black;
-      border: solid lightgray;
-      height: 50px;
-      border: solid black;
-  }
+      height: 40px;
+      padding: 5px;
+  } */
 
-  td{
+  /* .leftbloc td{
       color: black;
       text-align: center;
-      height: 100px;
+      height: 120px;
       font-weight: bolder;
-      border: solid white;
+      padding: 10px;
+  } */
+
+  .leftbloc img{
+      width: 130px;
       height: 100px;
+      margin-right: 15px;
   }
 
-  .quantity-number{
-      width: 40px;
+  .leftbloc .remove{
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
   }
+
+  .leftbloc .cart-quantity-input{
+      width: 45px;
+      height: 30px;
+      padding: 5px;
+  }
+
+  /* .leftbloc .cart-info{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+  } */
+
+  .cart-row{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+
+  .cart-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 25px auto;
+    width: 80%;
+  }
+
+
+
+
+
+
+
+
+
 
   .rightbloc{
       border: solid;
@@ -74,23 +129,28 @@
       padding: 0 8%;
   }
 
-
   .summary{
     text-align: center;
     padding: 30px;
     border-bottom: solid;
   }
 
-  .subtotal{
-      text-align: start;
-      padding: 15px 0;
+  .rightbloc table{
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 25px auto;
+    border-collapse: collapse;
   }
 
-  .estimated{
-    text-align: start;
-    border-top: solid;
-    border-bottom: solid;
-    padding: 15px 0px;
+  .rightbloc th{
+      text-align: start;
+      font-size: 20px;
+  }
+
+  .rightbloc td{
+      text-align: end;
+      font-weight: bolder;
   }
 
   #checkout{

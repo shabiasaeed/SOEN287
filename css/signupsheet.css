@@ -1,0 +1,458 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+ {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*---------------------------
+ SIGN UP TITLE AND SENTENCE
+----------------------------*/
+.signup-title
+{
+	color:black;
+	font-size:45px;
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:15px;
+	margin:auto;
+}
+
+.signup-sentence{
+	text-align:center;
+	font-size:20px;
+	padding-bottom:15px;
+}
+
+.disclaimer-sentence{
+	font-size:15px;
+	padding-bottom:10px;
+}
+
+.signup-container{
+	margin:auto;
+	text-align:center;
+}
+
+
+/*--------------------------------
+PERSONAL INFORMATION===== BOX 1
+---------------------------------*/
+.pinfo-title{
+	font-size:23px;
+	color:white;
+	padding-bottom:20px;
+}
+
+#PersonalInfo-container{
+	color:white;
+	margin:auto;
+	background-color:#A9A9A9;
+  width:60%;
+	border-radius:10px;
+	padding:20px;
+	padding-bottom:40px;
+
+}
+
+.pinfo-form label{
+	display:block;
+}
+.pinfo-form-group1{
+	padding-bottom:20px;
+	text-align:left;
+}
+
+.pinfo-form input{
+  width:100%;
+  padding:10px;
+  border-radius:10px; 
+  margin-bottom:10px;
+}
+
+/*-----------------------------
+CONTACT INFORMATION=====BOX 2
+------------------------------*/
+
+.Cinfo-title{
+	font-size:23px;
+	padding-bottom:20px;
+}
+.ContactInfo{
+	display:block;
+	color:white;
+	padding:20px;
+	padding-bottom:40px;
+	margin:auto;
+	background-color:#A9A9A9;
+	border-radius:10px;	
+	width:60%;
+}
+
+.cinfo-form label{
+	display:block;
+}
+
+.cinfo-form input{  
+  
+  width:100%;
+  padding:10px;
+  border-radius: 0px;
+  border-radius:10px;
+}
+
+.cinfo-form-group2{
+	padding-top:12px;
+	padding-bottom:20px;
+	text-align:left;
+}
+
+
+
+/*-------------------------------------------------
+DROPDOWN LABEL OPTIONS FOR COUNTRY AND PROVINCE
+-------------------------------------------------*/
+.dropdownlabels label{
+	padding:7px;
+}
+
+.dropdownlabels option{
+  position: absolute;
+  background-color: #585858;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownlabels select{
+  background-color: #B22222;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-family:Montserrat;
+  border: none;
+  border-radius:10px;	
+  text-align:center;
+}
+
+/*--------------------------------
+SUBMIT  AND RESET BUTTONS BUTTON
+----------------------------------*/
+ 
+.submit-button{
+  display: inline-block;
+	padding:30px;
+}
+
+.reset-button{
+  display:inline-block;
+	padding:20px;
+}
+
+
+input[type="button"]
+{
+	text-align:center;
+	width:200px;
+	 color: white;
+	background-color:#B22222;
+	font-size:16px;
+	border-radius:15px;
+}
+
+input[type="submit"]
+{
+	text-align:center;
+
+	width:200px;
+	 color: white;
+	background-color:#B22222;
+	font-size:16px;
+	border-radius:15px;
+}
+
+.goback{
+	font-size:20px;
+	padding-bottom:15px;
+}
+
+
+/*-----------------------------------
+MEDIA QUERIES FOR A RESPONSIVE PAGE
+-------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  #PersonalInfo-container{
+    width:100%;
+  }
+
+  .ContactInfo{
+    width:100%;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------
+FOOTER, TERMS AND CONDITIONS, CONTACT
+----------------------------------------*/
+
+/* 1. Fixing color backgrounds */
+.footer-container {
+  display: grid;
+  grid-template-rows:1fr 5fr 1fr;
+}
+
+.footer-navigation-bar {
+  background-color: #B22222;
+}
+
+.footer-grey-section {
+  background-color: rgb(0, 0, 0);
+}
+
+/* The bottom footer, that matches the header.*/
+.footer-copyright {
+  background-image:url(../imgs/fruit.jpg);
+
+  background-size: cover;
+}
+
+.copyright-background {
+  object-fit: cover;
+  grid-template-columns: 1/-1;
+  height: 100px;
+}
+
+
+.footer-navigation-bar-content {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%; 
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  background-color:#B22222;
+}
+
+.footer-navigation-bar-buttons {
+  justify-self: start;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  background-color:#B22222;
+}
+
+.social-media {
+  justify-self: end;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.nav-left-button {
+  background-color: #B22222;
+  color: #fff;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.nav-left-button:hover {
+  background-color: white;
+  color: red;
+  
+}
+
+.social-media-buttons {
+  background-color:#B22222;;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.social-media-buttons:hover {
+  background-color: white;
+  color: red;
+}
+
+.footer-content-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%; 
+  max-width: 1000px;
+  padding: 1em;
+  margin: auto;
+  row-gap: 1em;
+}
+
+.footer-grey-section-first-row {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5%;
+}
+/* All the columns of first rows are in this section */
+.footer---my-account,
+.footer---what-we-offer,
+.footer---get-to-know-us,
+.footer--images-column {
+  display: grid;
+  row-gap: 1em;
+  align-self: start;
+  
+}
+
+.footer-anchor {
+  color: white;
+}
+
+.footer-anchor:link {
+  text-decoration: none;
+}
+
+.footer-anchor:visited {
+  text-decoration: lightgray;
+}
+
+.footer-anchor:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: underline;
+}
+
+.footer-header-category {
+  color: white;
+  font-size: 1.5em;
+}
+
+.footer-promotion-img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-promotion-button {
+  cursor: pointer;
+  border: none;
+}
+
+.footer-promotion-button:hover {
+  opacity: 0.5;
+}
+
+
+.newsletter-survey-text {
+  color: white;
+}
+
+.footer---newsletter,
+.footer---survey {
+  color: white;
+}
+
+.footer-anchor-underlined {
+  color: white;
+}
+
+.footer-anchor-underlined:link {
+  text-decoration: underline;
+}
+
+.footer-anchor-underlined:visited {
+  text-decoration: lightgray;
+}
+
+.footer-anchor-underlined:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.ownership-laws {
+  width: 100%; 
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.conditions {
+  justify-self: start;
+}
+
+.copyright {
+  justify-self: end;
+  color: white;
+}
+
+.conditions-anchor {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 2em;
+}
+
+.copyright-anchors {
+  color: white;
+}
+
+.copyright-anchors:link {
+  text-decoration: underline;
+}
+
+.copyright-anchors:visited {
+  text-decoration: lightgray;
+}
+
+.copyright-anchors:hover {
+  color: rgba(255, 255, 255, 0.37);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .footer-container {
+    grid-template-rows: 5% 100% 5%;
+  }
+
+  .footer-grey-section-first-row {
+    grid-auto-flow: row;
+    row-gap: 2em;
+  }
+
+  .footer-anchor {
+    justify-content: center;
+  }
+
+  
+}

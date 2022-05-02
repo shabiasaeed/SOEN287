@@ -96,8 +96,9 @@
           <!-- Cart button -->
           <div class="cart-button-container">
             <a href="../page4.html"
-              ><button class="cart-button">
-                <i class="fa-solid fa-cart-shopping"></i> $0.00
+              ><button class="cart-button" id="cart-button">
+                <i class="fa-solid fa-cart-shopping" ></i> <p id="total-cost">$0.00</p>
+                <input id="cost-of-item" style="display:none" value = "0" /> 
               </button>
             </a>
           </div>
@@ -191,7 +192,7 @@
           <!-- Add to cart buttons -->
           <div class="article-add-to-cart-container">
             <div class="article-add-to-cart-quantity-container">
-              <button class="article-quantity-buttons">
+              <button class="article-quantity-buttons minus-quantity-button">
                 <i class="fa-solid fa-minus"></i></i>
               </button>
               <input
@@ -201,14 +202,18 @@
                 class="article-quantity-input"
                 min="1"
                 max="20"
+                id="item-quantity-chosen"
               />
-              <button class="article-quantity-buttons">
+
+              <button class="article-quantity-buttons plus-quantity-button">
                 <i class="fa-solid fa-plus"></i>
               </button>
             </div>
+
             <div class="article-add-to-cart-button-container">
-              <button class="article-add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              <button id="addToCartButton" class="article-add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i> Add</button>
             </div>
+          
           </div>
 
           <!-- Product description buttons (description and ingredient) -->
@@ -262,6 +267,8 @@
           </p>
         </div>
       </div>
+      <script type="text/javascript" src="page-3-french-baguette-javascript.js"></script>
+      <script type="text/javascript" src="common.js"></script>
     </article>
 
     <footer>

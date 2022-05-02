@@ -21,9 +21,8 @@
 
 </head>
 
-
 <body>    
-
+  <script type="text/javascript" src="p2-common.js"></script>
   <!----------------------------------------------------
        HEADER 
       ----------------------------------------------------->
@@ -103,8 +102,10 @@
           <!-- Cart button -->
           <div class="cart-button-container">
             <a href="page4.html"
-              ><button class="cart-button">
-                <i class="fa-solid fa-cart-shopping"></i> $0.00
+              ><button class="cart-button" id="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <p id="total-cost">$0.00</p>
+                <input id="cost-of-item" style="display:none" value = "0" /> 
               </button>
             </a>
           </div>
@@ -113,12 +114,14 @@
       </div>
     </header>
 
-	<main>
-	<div class="container">
+<main>
+  <br>
+	<!-- <div class="container">
 		<div class="row">
             <div class="container page-wrapper">
                 <div class="page-inner">
-                    <div class="column">
+                    <div class="column"> -->
+                      <div class="main-container">
 
                         <div class="element-wrapper">
                             <div class="box-up">
@@ -130,6 +133,7 @@
                                     </div>
                                     <div class="a-size"><span class="size">$1.00 /100g</span></div>
                                 </div>
+                                <a class="cart" href="assets/page-3-french-baguette.html"></a>
                             </div>
 
                             <div class="box-down">
@@ -144,13 +148,12 @@
                     </a>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
 
-
-        <div class="column">
+        <!-- <div class="column">
             <div class="container page-wrapper">
-                <div class="page-inner">
+                <div class="page-inner">  -->
 
                         <div class="element-wrapper">
                         <div class="box-up">
@@ -162,6 +165,7 @@
                                 </div>
                                 <div class="a-size"><span class="size">$1.03 /100g</span></div>
                             </div>
+                            <a class="cart" href="assets/page-3-artisan-bread.html"></a>
                         </div>
 
                         <div class="box-down">
@@ -176,15 +180,15 @@
                     </a>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-    <div class="column">
+    <!-- <div class="column">
         <div class="container page-wrapper">
-            <div class="page-inner">
+            <div class="page-inner"> -->
 
                     <div class="element-wrapper">
                     <div class="box-up">
@@ -196,6 +200,7 @@
                             </div>
                             <div class="a-size"><span class="size">$1.08 /100g</span></div>
                         </div>
+                        <a class="cart" href="assets/page-3-croissants.html"></a>
                     </div>
 
                     <div class="box-down">
@@ -210,14 +215,14 @@
                 </a>
                         </div>
                     </div>
-                </div>
+                <!-- </div>
             </div>
-        </div>
+        </div> -->
 
 
-    <div class="column">
+    <!-- <div class="column">
         <div class="container page-wrapper">
-            <div class="page-inner">
+            <div class="page-inner"> -->
 
                     <div class="element-wrapper">
                     <div class="box-up">
@@ -229,6 +234,7 @@
                             </div>
                             <div class="a-size"><span class="size">$0.50 /100g</span></div>
                         </div>
+                        <a class="cart" href="assets/page-3-plain-bagel.html"></a>
                     </div>
 
                     <div class="box-down">
@@ -243,17 +249,17 @@
                 </a>
                         </div>
                     </div>
-                </div>
+                <!-- </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
-<div class="row">
+<!-- <div class="row">
     <div class="container page-wrapper">
         <div class="page-inner">
-            <div class="column">
+            <div class="column"> -->
 
                 <div class="element-wrapper">
                     <div class="box-up">
@@ -265,6 +271,7 @@
                             </div>
                             <div class="a-size"><span class="size">$0.85 /100g</span></div>
                         </div>
+                        <a class="cart" href="assets/page-3-macarons.html"></a>
                     </div>
 
                     <div class="box-down">
@@ -279,13 +286,13 @@
             </a>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
 
 
-<div class="column">
+<!-- <div class="column">
     <div class="container page-wrapper">
-        <div class="page-inner">
+        <div class="page-inner"> -->
 
                 <div class="element-wrapper">
                 <div class="box-up">
@@ -297,6 +304,7 @@
                         </div>
                         <div class="a-size"><span class="size">$1.55 /100g</span></div>
                     </div>
+                    <a class="cart" href="assets/page-3-cupcakes.html"></a>
                 </div>
 
                 <div class="box-down">
@@ -311,15 +319,15 @@
             </a>
                     </div>
                 </div>
-            </div>
+            <!-- </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
-<div class="column">
+<!-- <div class="column">
 <div class="container page-wrapper">
-    <div class="page-inner">
+    <div class="page-inner"> -->
 
             <div class="element-wrapper">
             <div class="box-up">
@@ -331,6 +339,7 @@
                     </div>
                     <div class="a-size"><span class="size">$2.11 /100g</span></div>
                 </div>
+                <a class="cart" href="assets/page-3-cinnamon-rolls.html"></a>
             </div>
 
             <div class="box-down">
@@ -345,14 +354,14 @@
         </a>
                 </div>
             </div>
-        </div>
+        <!-- </div>
     </div>
-</div>
+</div> -->
 
-
-<div class="column">
+<!-- height="110px" -->
+<!-- <div class="column">
 <div class="container page-wrapper">
-    <div class="page-inner">
+    <div class="page-inner"> -->
 
             <div class="element-wrapper">
             <div class="box-up">
@@ -364,6 +373,7 @@
                     </div>
                     <div class="a-size"><span class="size">$0.56 /100g</span></div>
                 </div>
+                <a class="cart" href="assets/page-3-white-bread.html"></a>
             </div>
 
             <div class="box-down">
@@ -378,10 +388,10 @@
         </a>
                 </div>
             </div>
-        </div>
-    </div>
+        <!-- </div> -->
+    <!-- </div>
 </div>
-</div>
+</div> -->
 
 
 </main>

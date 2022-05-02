@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./page4.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./footer.css">
+    <!-- <script src="./page4.js" async></script> -->
+    <script src = "./page4.js" async></script>  
+    <script src = "./refresh.js" async></script>
 </head>
 
 <body>
@@ -93,72 +96,132 @@
             <div class="cart-button-container">
               <a href="page4.html"
                 ><button class="cart-button">
-                  <i class="fa-solid fa-cart-shopping"></i> $0.00
+                  <p id="price-icon">$0.00</p>
                 </button>
               </a>
             </div>
           </div>
           <hr />
         </div>
-      </header>
+    </header>
 
-
-
-
-
-
-
+    <!-- --------------------------------------------------BEGINNING MAIN CODE-------------------------------------------------- -->
 
     <main>
       
       <h1 class="grocerycart">My Grocery Cart</h1>
 
-          <div class="leftbloc">
-            <table>
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                </tr>
-                <tr class="item1">
-                  <td class="product item1">Milk</td>
-                  <td class="price item1">5$</td>
-                  <td class="quantity item1">
-                      <input type="number" min="1" class="quantity-number">
-                  </td>
-                  <td class="total item1">10$</td>
+        <div class="leftbloc">
+          <!-- <table>  
+              <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
               </tr>
-              <tr class="item2">
-                  <td class="product item2">Apple</td>
-                  <td class="price item2">2$</td>
-                  <td class="quantity item2">
-                      <input type="number" min="1" class="quantity-number">
-                  </td>
-                  <td class="total item2">30$</td>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
-              <tr class="item3">
-                  <td class="product item3">Strawberry</td>
-                  <td class="price item3">5$</td>
-                  <td class="quantity item3">
-                      <input type="number" min="1" class="quantity-number">
-                  </td>
-                  <td class="total item3">40$</td>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
-            </table>
-        </div>
-    
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table> -->
+
+            <div class="cart-header">
+              <h2>Product</h2>
+              <h2>Price</h2>
+              <h2>Quantity</h2>
+            </div>
+
+            <div class="cart-items">
+
+              <div class="cart-row">
+                <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="./images/apple.jpg" >
+                  <p class="cart-item-title">Apple</p>
+                </div>
+                <div class="cart-price cart-column">$1.50</div>
+                <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="1">
+                  <button class="remove" type="button">REMOVE</button>
+                </div>
+              </div>
+
+              <br>
+
+              <div class="cart-row">
+                <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="./images/lemon.jpg" >
+                  <p class="cart-item-title">Lemon</p>
+                </div>
+                <div class="cart-price cart-column">$1.25</div>
+                <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="1">
+                  <button class="remove" type="button">REMOVE</button>
+                </div>
+              </div>
+
+              <br>
+
+              <div class="cart-row">
+                <div class="cart-item cart-column">
+                  <img class="cart-item-image" src="./images/broccoli.jpg" >
+                  <p class="cart-item-title">Broccoli</p>
+                </div>
+                <div class="cart-price cart-column">$2.00</div>
+                <div class="cart-quantity cart-column">
+                  <input class="cart-quantity-input" type="number" value="1">
+                  <button class="remove" type="button">REMOVE</button>
+                </div>
+              </div>
+
+            </div>
+      </div>
+
         <div class="rightbloc">
             <h1 class="summary">Summary</h1>
-            <h2 class="subtotal">Subtotal</h2>
-            <p class="subtotal">Estimated QST</p>
-            <p class="subtotal">Estimated GST</p>
-            <h2 class="estimated">Estimated Total</h2>
+
+            <table>
+              <tr>
+                <th>Subtotal:</th>
+                <td class="subTotal">$0.00</td>
+              </tr>
+              <tr>
+                <th>Number of Products:</th>
+                <td class="numProduct">0</td>
+              </tr>
+              <tr>
+                <th>Estimated QST:</th>
+                <td class="QST">$0.00</td>
+              </tr>
+              <tr>
+                <th>Estimated GST:</th>
+                <td class="GST">$0.00</td>
+              </tr>
+              <tr>
+                <th>Estimated Total:</th>
+                <td class="estimatedTotal">$0.00</td>
+              </tr>
+            </table>
+
             <input type="button" name="checkout" id="checkout" value="CHECKOUT" >
             <p class="help">Need help? <a href="">Contact us</a></p>
+
         </div>
+
     </main>
     
+
+    <!-- --------------------------------------------------END MAIN CODE-------------------------------------------------- -->
+
 
     <footer>
         <div class="footer-container">
@@ -261,4 +324,3 @@
       </footer>
 
 </body>
-</html>

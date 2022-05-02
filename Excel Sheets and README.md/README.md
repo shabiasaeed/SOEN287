@@ -1,4 +1,4 @@
-# SOEN287 WORK PACAKAGE 1
+# SOEN287 WORK PACAKAGE 3
 
 ConUmart is a grocery store website project created for SOEN 287.
 

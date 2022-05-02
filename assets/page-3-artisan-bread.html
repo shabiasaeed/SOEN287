@@ -13,6 +13,8 @@
       src="https://kit.fontawesome.com/3b08ae2567.js"
       crossorigin="anonymous"
     ></script>
+    </script>
+
     <title>Artisan Bread</title>
   </head>
 
@@ -96,8 +98,9 @@
           <!-- Cart button -->
           <div class="cart-button-container">
             <a href="../page4.html"
-              ><button class="cart-button">
-                <i class="fa-solid fa-cart-shopping"></i> $0.00
+              ><button class="cart-button" id="cart-button">
+                <i class="fa-solid fa-cart-shopping"></i> <p id="total-cost">$0.00</p>
+                <input id="cost-of-item" style="display:none" value = "0" /> 
               </button>
             </a>
           </div>
@@ -191,9 +194,11 @@
           <!-- Add to cart buttons -->
           <div class="article-add-to-cart-container">
             <div class="article-add-to-cart-quantity-container">
-              <button class="article-quantity-buttons">
+              <button class="article-quantity-buttons minus-quantity-button">
                 <i class="fa-solid fa-minus"></i></i>
               </button>
+
+
               <input
                 aria-label="quantity"
                 type="number"
@@ -201,15 +206,22 @@
                 class="article-quantity-input"
                 min="1"
                 max="20"
+                id="item-quantity-chosen"
               />
-              <button class="article-quantity-buttons">
+
+              <button class="article-quantity-buttons plus-quantity-button">
                 <i class="fa-solid fa-plus"></i>
               </button>
             </div>
+
+
+<!-------------------------------------------------ADD TO CART BLACK BUTTON ------------------------>
             <div class="article-add-to-cart-button-container">
-              <button class="article-add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i> Add</button>
+              <button id="addToCartButton" class="article-add-to-cart-button"><i class="fa-solid fa-cart-shopping"></i> Add</button>
             </div>
           </div>
+
+<!------------------------------------------------------------------------------------------>
 
           <!-- Product description buttons (description and ingredient) -->
           <div>
@@ -262,6 +274,8 @@
           </p>
         </div>
       </div>
+      <script type="text/javascript" src="page-3-artisant-bread-javascript.js"></script>
+      <script type="text/javascript" src="common.js"></script>
     </article>
 
     <footer>
@@ -361,5 +375,89 @@
         </div>
       </div>
     </footer>
+
+
+ <!-------------------------------------- SCRIPTS--------------------------------------------------------------->
+<!-- <script>
+/*Minus Button: Added a class in html called "minus-quantity-button"*/
+//Disable the minus button initially (to avoid the quantity going below 1). Also added .minus-quantity-button class
+document.querySelector(".minus-quantity-button").setAttribute("disabled", "disabled");
+
+//value of quantity in input
+var quantityValue = document.getElementById("item-quantity-chosen").value;
+quantityValue = 1; //initially setting the value to 1 to avoid NaN error in calculations
+
+//plus button. Also added .plus-quantity-button class
+document.querySelector(".plus-quantity-button").addEventListener("click", function () {
+    //get quantity value first. Also in input, added id item-quantity-chosen
+    quantityValue = document.getElementById("item-quantity-chosen").value;
+
+    //increase value when plus button is pressed
+    quantityValue++;
+
+    //Showing increment
+    document.getElementById("item-quantity-chosen").value = quantityValue;
+
+    //removing disable option if the quantity of items is above 1
+    if (quantityValue > 1) {
+      document.querySelector(".minus-quantity-button").removeAttribute("disabled");
+      document.querySelector(".minus-quantity-button").classList.remove("disabled");
+    }
+
+  });
+
+
+//Same thing with minus button as with plus button above but with an extra detail to remove disable option
+document.querySelector(".minus-quantity-button").addEventListener("click", function () {
+    //get quantity value first
+    quantityValue = document.getElementById("item-quantity-chosen").value;
+
+    //Decrease value when plus button is pressed
+    quantityValue--;
+
+    //Showing increment
+    document.getElementById("item-quantity-chosen").value = quantityValue;
+
+    //adding this so when the quantity is 1, disable option is allowed which prevents from pressing minus button.
+    if (quantityValue == 1) {
+      document.querySelector(".minus-quantity-button").setAttribute("disabled", "disabled");
+    }
+
+  });
+
+
+//===========================================COST CALCULATOR (in the add to cart button on header)===============================================================
+//declaring variable of total cost: Also added <p> element in cart button with id called: "total-cost"
+//and <input/> element with id called "cost-of-item"
+var totalCost = document.getElementById("cost-of-item").value;
+var itemCost = 0;
+//price function. It is called everytime when plus or minus button is used. (above)
+function cost(){
+    if (quantityValue >= 2){
+     var itemCost = parseInt(quantityValue / 2) * 7 + (quantityValue % 2) * 4.19;
+   } else {
+     var itemCost = (quantityValue) * 4.19;
+   }
+  
+   if (totalCost == 0){
+    var purchaseValue= document.getElementById("cost-of-item").innerText = (Math.round(itemCost * 100) / 100);
+    totalCost = (Math.round(itemCost * 100) / 100);
+   } else {
+    var purchaseValue= document.getElementById("cost-of-item").innerText = (Math.round((itemCost+ totalCost) * 100) / 100);
+    totalCost = (Math.round((itemCost+ totalCost) * 100) / 100);
+  }
+  var valueOfButton= document.getElementById("total-cost").textContent= ("$" + purchaseValue);
+}
+//=====================================add button==============================
+// before, you did this part on the cart button. Thats why nothing was happening when you would click add
+//we need to do the javascript on the add button, i went in your code and added an ID to the add button called addToCartButton.
+// so we get this button and save it to the var, add the event listener and then call the cost function
+var addBtn=document.getElementById("addToCartButton");
+
+    addToCartButton.addEventListener('click', function (){
+      cost(); //call the cost function to calculate the cost
+    });
+    </script> -->
   </body>
 </html>
+
